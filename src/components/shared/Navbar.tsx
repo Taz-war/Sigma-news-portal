@@ -2,30 +2,59 @@
 import { FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import logo from '@/assets/logo.png'
 import Image from 'next/image';
+import Link from 'next/link';
+import { Button, buttonVariants } from '../ui/button';
+
+const navItems = [
+    {
+        route: 'Home',
+        pathname: '/',
+    },
+    {
+        route: 'Pages',
+        pathname: '/pages',
+    },
+    {
+        route: 'Category',
+        pathname: '/category',
+    },
+    {
+        route: 'News',
+        pathname: '/news',
+    },
+    {
+        route: 'About',
+        pathname: '/about',
+    },
+    {
+        route: 'Contact',
+        pathname: '/contact',
+    },
+]
 
 const Navbar = () => {
-  return (
-    <nav className="flex items-center justify-between p-4">
-      <div>
-        <Image src={logo} height={100} width={100} alt='logo' />
-      </div>
-      <div className="hidden md:flex gap-4">
-        <a href="/home">Home</a>
-        <a href="/pages">Pages</a>
-        <a href="/category">Category</a>
-        <a href="/news">News</a>
-        <a href="/post">Post</a>
-        <a href="/contact">Contact</a>
-      </div>
-      <div className="flex items-center gap-4 justify-around">
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
-        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-      </div>
-    </nav>
-  );
+    return (
+        <nav className="flex items-center justify-between p-4 bg-black">
+            <div>
+                <Image src={logo} height={100} width={100} alt='logo' />
+            </div>
+            <div className="hidden md:flex gap-4">
+                {navItems.map((items, index) => (
+                    <Link key={index} href={items.pathname} className={`${buttonVariants({ variant: "outline" })} bg-black border-none text-white hover:bg-[#27272A] hover:text-white`}>
+                        {items.route}
+                    </Link>
+                ))}
+
+            </div>
+            <div className="flex items-center gap-6 justify-around text-white text-xl">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </div>
+        </nav>
+    );
 };
 
 export default Navbar;
