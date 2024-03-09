@@ -1,3 +1,4 @@
+import LatestNews from "@/components/ui/LatestNews";
 import {
   ResizableHandle,
   ResizablePanel,
@@ -13,8 +14,8 @@ export default function Home() {
         className="min-h-[200px]  rounded-lg border"
       >
         <ResizablePanel defaultSize={75}>
-          <div className="flex h-full items-center justify-center p-6">
-            <span className="font-semibold">Content</span>
+          <div className="flex h-full items-center justify-center p-2">
+            <LatestNews />
           </div>
         </ResizablePanel>
         <ResizableHandle withHandle />
