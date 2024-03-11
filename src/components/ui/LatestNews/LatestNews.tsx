@@ -40,7 +40,7 @@ const LatestNews = () => {
                         </CardHeader>
                         <CardContent>
                             <Image src={topNews2} objectFit='fit-content' alt='topNews2' className='rounded-md min-w-full' />
-                            <h2 className="scroll-m-20 mt-4 pb-2 text-3xl font-semibold tracking-wide first:mt-0 ">
+                            <h2 className="scroll-m-20 mt-4 pb-2 text-3xl font-semibold tracking-tight first:mt-0 ">
                                 Bitcoin Climbs as ELon Musk says Tesla Likely to Accept it Again
                             </h2>
                             <CardDescription className=' text-xl'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at it's layout...</CardDescription>
@@ -57,7 +57,7 @@ const LatestNews = () => {
                         </CardHeader>
                         <CardContent>
                             <Image src={topNews2} objectFit='fit-content' alt='topNews2' className='rounded-md min-w-full' />
-                            <h2 className="scroll-m-20 mt-4 pb-2 text-3xl font-semibold tracking-wide first:mt-0 ">
+                            <h2 className="scroll-m-20 mt-4 pb-2 text-3xl font-semibold tracking-tight first:mt-0 ">
                                 Bitcoin Climbs as ELon Musk says Tesla Likely to Accept it Again
                             </h2>
                             <CardDescription className=' text-xl'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at it's layout...</CardDescription>
@@ -73,7 +73,7 @@ const LatestNews = () => {
                     </CardHeader>
                     <CardContent>
                         <Image src={topNews2} objectFit='fit-content' alt='topNews2' className='rounded-md min-w-full' />
-                        <h2 className="scroll-m-20 mt-4 pb-2 text-3xl font-semibold tracking-wide first:mt-0 ">
+                        <h2 className="scroll-m-20 mt-4 pb-2 text-3xl font-semibold tracking-tight first:mt-0 ">
                             Bitcoin Climbs as ELon Musk says Tesla Likely to Accept it Again
                         </h2>
                         <CardDescription className=' text-xl'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at it's layout...</CardDescription>
@@ -90,7 +90,7 @@ const LatestNews = () => {
                         </CardHeader>
                         <CardContent>
                             <Image src={topNews2} objectFit='fit-content' alt='topNews2' className='rounded-md min-w-full' />
-                            <h2 className="scroll-m-20 mt-4 pb-2 text-3xl font-semibold tracking-wide first:mt-0 ">
+                            <h2 className="scroll-m-20 mt-4 pb-2 text-3xl font-semibold tracking-tight first:mt-0 ">
                                 Bitcoin Climbs as ELon Musk says Tesla Likely to Accept it Again
                             </h2>
                             <CardDescription className=' text-xl'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at it's layout...</CardDescription>
