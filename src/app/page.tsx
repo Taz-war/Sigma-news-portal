@@ -1,4 +1,5 @@
-import LatestNews from "@/components/ui/LatestNews";
+import LatestNews from "@/components/ui/LatestNews/LatestNews";
+import SideBar from "@/components/ui/SideBar/SideBar";
 import {
   ResizableHandle,
   ResizablePanel,
@@ -20,8 +21,8 @@ export default function Home() {
         </ResizablePanel>
         <ResizableHandle withHandle />
         <ResizablePanel defaultSize={25}>
-          <div className="flex h-full items-center justify-center p-6">
-            <span className="font-semibold">Sidebar</span>
+          <div className="flex h-full items-start justify-center p-2">
+            <SideBar />
           </div>
         </ResizablePanel>
       </ResizablePanelGroup>
