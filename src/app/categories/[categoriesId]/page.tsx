@@ -14,7 +14,7 @@ const DynamicNews = async ({ params, searchParams }) => {
           {
             data.map((news) => (
               <div key={news.id}>
-                <Link href={`/${news.category}/${news._id}`}>
+                <Link href={`/${news.category.toLowerCase()}/${news._id}`}>
                   <Card className="w-full mt-2 p-3">
                     <CardHeader>
                       <CardTitle>{news.category}</CardTitle>
