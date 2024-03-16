@@ -4,7 +4,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const DynamicNews = async ({ params, searchParams }) => {
+type CategoryParams = {
+  category: string;
+}
+
+const DynamicNews = async ({ searchParams }: { searchParams: CategoryParams }) => {
   const { data } = await getCategoryNews(searchParams.category)
   console.log(data)
   return (
@@ -12,7 +16,7 @@ const DynamicNews = async ({ params, searchParams }) => {
       <div>
         <div className=' grid grid-cols-2 gap-4 mb-5'>
           {
-            data.map((news) => (
+            data.map((news:any) => (
               <div key={news.id}>
                 <Link href={`/${news.category.toLowerCase()}/${news._id}`}>
                   <Card className="w-full mt-2 p-3">

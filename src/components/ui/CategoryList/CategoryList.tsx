@@ -13,7 +13,7 @@ const CategoryList = async () => {
         <div className=' p-4'>
             <h5 className=' font-bold p-3 border-b-4 border-red-600'>Categories</h5>
             <div>
-                {allCategories.map(category => (
+                {allCategories.map((category:any) => (
                     <div key={category.id} className=' w-full p-2'>
                         <Button  variant={'outline'} className=' w-full'>
                             <Link href={`/categories/news?category=${category.title.toLowerCase()}`}>{category.title}</Link>

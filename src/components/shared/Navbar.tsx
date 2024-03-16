@@ -43,7 +43,7 @@ const Navbar = () => {
                 </div>
                 <div className="hidden md:flex gap-4">
                     {navItems.map((items, index) => (
-                        <Link key={index} href={items.pathname} className={`${buttonVariants({ variant: "outline" })} bg-black border-none text-white hover:bg-[#131314] hover:text-white`}>
+                        <Link key={index} href={items.pathname} className={`${buttonVariants({ variant: "outline" })} bg-black border-none text-white hover:bg-[#131314] hover:text-black`}>
                             {items.route}
                         </Link>
                     ))}

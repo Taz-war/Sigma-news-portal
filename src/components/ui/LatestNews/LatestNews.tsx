@@ -1,6 +1,4 @@
 import React from 'react'
-
-import { Button } from "@/components/ui/button"
 import {
     Card,
     CardContent,
@@ -9,8 +7,6 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
-import topNews from '@/assets/top-news.png'
-import topNews2 from '@/assets/top-news2.png'
 import Image from 'next/image'
 import { getAllNews } from '@/utils/getAllNews'
 
@@ -36,7 +32,7 @@ const LatestNews = async () => {
             </Card>
             <div className=' grid grid-cols-2 gap-4'>
                 {
-                    data.slice(0, 4).map((news) => (
+                    data.slice(0, 4).map((news:any) => (
                         <div key={news.id}>
                             <Card className="w-full mt-2 p-3">
                                 <CardHeader>

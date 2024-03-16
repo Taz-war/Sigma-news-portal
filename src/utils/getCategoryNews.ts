@@ -1,4 +1,4 @@
-export const getCategoryNews = async (category) =>{
+export const getCategoryNews = async (category:string) =>{
     const res = await fetch(`https://the-news-portal-server.vercel.app/news?category=${category}`,
         {
             cache:'no-store'

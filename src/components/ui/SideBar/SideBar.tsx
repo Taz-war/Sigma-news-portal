@@ -9,6 +9,8 @@ import {
 } from "@/components/ui/card"
 import Image from 'next/image'
 import sideImage from '@/assets/side-top-news.png'
+import sideBottomNews from '@/assets/side-bottom-img.png'
+import SideBarNewsCard from './SideBarNewsCard'
 
 const SideBar = () => {
     return (
@@ -28,6 +30,23 @@ const SideBar = () => {
                 <CardFooter className="flex justify-between">
                 </CardFooter>
             </Card>
+            <div className=' my-3 mt-5'>
+                <SideBarNewsCard />
+                <SideBarNewsCard />
+                <SideBarNewsCard />
+                <SideBarNewsCard />
+                <SideBarNewsCard />
+                <SideBarNewsCard />
+                <SideBarNewsCard />
+            </div>
+            <div>
+                <Image
+                    src={sideBottomNews}
+                    height={400}
+                    width={350}
+                    alt="rectangle world image"
+                />
+            </div>
         </div>
     )
 }

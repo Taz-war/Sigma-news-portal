@@ -7,7 +7,12 @@ import {
 import Image from 'next/image'
 import React from 'react'
 
-const NewsDetailPage = async ({ params }) => {
+type NewsDetailParams = {
+  news: string;
+  newsId: string;
+}
+
+const NewsDetailPage = async ({ params }:{params:NewsDetailParams}) => {
   const { data: news } = await getSingleNews(params.newsId)
   console.log(params)
   return (
